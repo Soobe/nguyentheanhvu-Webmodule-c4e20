@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <h2>C4E Blog</h2>
+    {%for post in posts %}
+        <div>
+            <!-- <template language, jinja2 -->
+            <h3>{{ post['title'] }}</h3>
+            <p>
+                <!-- Hôm nay trăng lên cao quá
+                <br>
+                Anh muốn hôn em vào má -->
+                {{ post['content'] }}
+            </p>
+            <p>
+                <!-- By: <i>Anh Vũ</i> -->
+            By: 
+            {% if post.author_sex == 1 %}
+                 "Mr"
+            (% else %)
+                 "Ms"
+            {% endif %}  
+                  
+             {{ post.author }}
+            </p>
+            <hr>
+        </div>
+    {% endfor %}
+</body>
+</html>
