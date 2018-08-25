@@ -22,6 +22,7 @@
         <p>Tên : {{service.name }} </p>
         <p>Năm Sinh : {{service.name.yob }}</p>
         <p>chiều cao : {{ service.height }}</p>
+        <a href="{{ url_for('detail', service_id=service.id) }}">Chi Tiết</a>
         <hr>
     </div>
     {%endfor %}

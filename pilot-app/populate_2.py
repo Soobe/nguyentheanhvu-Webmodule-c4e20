@@ -20,4 +20,4 @@ for i in range(50):
 
     )
 
-    new_customer.save()
+new_customer.save()

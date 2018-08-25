@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+        <h1>Detail homework</h1>
+    <div>
+
+    {% if gender == 1 %}
+    <img src= detail_service.image alt="">
+    <p>Tên: {{ detail_service.name }}</p>
+    <p>Năm sinh: {{ detail_service.yob }}</p>
+    <p>Chiều cao: {{ detail_service.height }} cm</p>
+    <p>Số điện thoại: {{ detail_service.phone }}</p>
+    <p>Địa chỉ: {{ detail_service.address }}</p>
+    <p>Trạng thái: {{ detail_service.status }}</p>
+    <p>Số điện thoại: {{ detail_service.phone }}</p>
+    <p>Mô tả: {{ detail_service.description }}</p>
+    <p>số đo 3 vòng: {{ detail_service.measurements }}</p>
+
+    {% else %}
+    <img src="../static/image/female.jpg" alt="">
+    <p>Tên: {{ detail_service.name }}</p>
+    <p>Năm sinh: {{ detail_service.yob }}</p>
+    <p>Chiều cao: {{ detail_service.height }} cm</p>
+    <p>Số điện thoại: {{ detail_service.phone }}</p>
+    <p>Địa chỉ: {{ detail_service.address }}</p>
+    <p>Trạng thái: {{ detail_service.status }}</p>
+    <p>Số điện thoại: {{ detail_service.phone }}</p>
+    <p>Mô tả: {{ detail_service.description }}</p>
+    <p>số đo 3 vòng: {{ detail_service.measurements }}</p>
+
+     {% endif %} -->
+    </dir>
+</body>
+</html>
